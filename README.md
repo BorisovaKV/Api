@@ -1,13 +1,21 @@
 # Тестирование Api
 
-Создание первой коллекции
-https://www.postman.com/qualityengineer-2891085/quality-engineer-s-workspace/collection/qjbs1va/demoshopping?action=share&creator=45128430
+На основе ресурса https://qa.demoshopping.ru/ 
 
-Коллекция Demo Shopping
-https://www.postman.com/qualityengineer-2891085/workspace/my-workspace/collection/45128430-a07c2ef4-0a33-4153-9b97-7db610160cf5?action=share&creator=45128430
+Я создала [коллекцию](https://www.postman.com/qualityengineer-2891085/my-workspace/collection/hc6ovn2/demoshopping) в Postman и протестировала все методы, которые там предусмотрены
 
-Тестирование SOAP-сервиса
-https://www.postman.com/qualityengineer-2891085/workspace/my-workspace/folder/45128430-12c96e46-29fb-4fb1-bc80-2bbdca10e92d?action=share&creator=45128430&ctx=documentation
+Для первых шести методов Products я написала автотесты и запустила их через функцию Run Collection, [результаты прогона](https://drive.google.com/file/d/1oNzeJluBlBO1CC2liwEOW4uRNygeH7R4/view?usp=drive_link)
 
-Изменения в коллекции Demo Shopping (Добавление новых продуктов)
-https://www.postman.com/qualityengineer-2891085/workspace/my-workspace/collection/45128430-a07c2ef4-0a33-4153-9b97-7db610160cf5?action=share&creator=45128430
+Используя следующий [WSDL](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL), я создала коллекцию в Postman
+
+С помощью методов SOAP-сервиса были получены данные на примере России:
+- `ListOfContinentsByName` — список континентов
+- `ListOfCurrenciesByName` — список валют
+- `ListOfCountryNamesByName` — список стран
+- `CountryName` — получение названия страны по коду
+- `CountryISOCode` — получение кода страны по названию
+- `FullCountryInfo` — полная информация о стране
+- `LanguageName` — название языка по коду
+
+[Коллекция в Postman](https://www.postman.com/qualityengineer-2891085/my-workspace/folder/q52bs2p/soap)
+
